@@ -32,5 +32,5 @@ jobs:
           sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
       - name: build project
         run: |
-          cargo build
+          cargo build --release
           cp target/release/field-day-map ../field-day-map
